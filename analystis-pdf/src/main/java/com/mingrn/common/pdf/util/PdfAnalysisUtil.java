@@ -1,4 +1,4 @@
-package com.mingrn.pdf.util;
+package com.mingrn.common.pdf.util;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;

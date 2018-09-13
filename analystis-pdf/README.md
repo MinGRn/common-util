@@ -38,7 +38,7 @@ analysis-pdf 是一个解析 PDF 文档的工具类。
 
 ```java
 import com.alibaba.fastjson.JSONObject;
-import com.mingrn.pdf.util.PdfAnalysisUtil;
+import PdfAnalysisUtil;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

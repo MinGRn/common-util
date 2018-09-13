@@ -1,4 +1,4 @@
-package com.mingrn.pdf.util;
+package com.mingrn.common.pdf.util;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.PDFRenderer;

@@ -1,4 +1,4 @@
-package com.mingrn.pdf.util;
+package com.mingrn.common.pdf.util;
 
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.parser.PdfTextExtractor;
