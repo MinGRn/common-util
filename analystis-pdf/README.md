@@ -10,8 +10,6 @@ analysis-pdf 是一个解析 PDF 文档的工具类。
 
 这两个类不直接对外提供调用，声明为 **默认** 权限。统一由 `PdfAnalysisUtil` 类提供调用。
 
-`PdfAnalysisUtil` 类当前提供如下方法：
-
 主要依赖包：
 
 ```xml
