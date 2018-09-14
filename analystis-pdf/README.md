@@ -15,15 +15,15 @@ analysis-pdf 是一个解析 PDF 文档的工具类。
 ```xml
 <!-- pdf box -->
 <dependency>
-	<groupId>org.apache.pdfbox</groupId>
-	<artifactId>pdfbox</artifactId>
-	<version>2.0.11</version>
+    <groupId>org.apache.pdfbox</groupId>
+    <artifactId>pdfbox</artifactId>
+    <version>2.0.11</version>
 </dependency>
 <!-- pdf iText -->
 <dependency>
-	<groupId>com.itextpdf</groupId>
-	<artifactId>itextpdf</artifactId>
-	<version>5.5.13</version>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itextpdf</artifactId>
+    <version>5.5.13</version>
 </dependency>
 ```
 
