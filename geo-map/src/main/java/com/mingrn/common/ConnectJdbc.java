@@ -55,10 +55,10 @@ public class ConnectJdbc {
 					continue;
 				}
 				locationObj = locationObj.getJSONObject("result").getJSONObject("location");
-				String up = updateSQL(locationObj.getDouble("lng"), locationObj.getDouble("lat"), objectId);
-				System.out.println(up);
+				String update = updateSQL(locationObj.getDouble("lng"), locationObj.getDouble("lat"), objectId);
+				System.out.println(update);
 				System.out.println(locationAddr + " >>>> " + locationObj.toJSONString());
-//				updateStatement.executeUpdate(up);
+				updateStatement.executeUpdate(update);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
