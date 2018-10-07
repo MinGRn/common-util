@@ -45,7 +45,7 @@ public class JedisConfig {
 	}
 
 	/**
-	 * 回收 Redis
+	 * 归还 Redis 连接
 	 *
 	 * @param jedis 实例
 	 */
@@ -55,6 +55,10 @@ public class JedisConfig {
 		}
 	}
 
+
+	/**
+	 * Redis配置文件加载
+	 */
 	private static class PropertyUtil {
 
 		/**

@@ -1,6 +1,6 @@
 # Jedis 客户端工具类
 
-在 [resources](src/main/resources) 文件夹下创建 `redis.properties` 文件,或者在 `resources` 文件夹下的 `properties` 文件夹下创建 `redis.properties`
+在 `resources` 文件夹下创建 `redis.properties/properties` 文件夹下创建 `redis.properties`
 
 ```
 + sre/main/resource
