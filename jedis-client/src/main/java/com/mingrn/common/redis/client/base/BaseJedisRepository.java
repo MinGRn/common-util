@@ -1,4 +1,4 @@
-package com.mingrn.common.redis.base;
+package com.mingrn.common.redis.client.base;
 
 /**
  * Redis 基础共用接口

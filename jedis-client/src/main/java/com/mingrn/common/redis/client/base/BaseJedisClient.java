@@ -1,4 +1,4 @@
-package com.mingrn.common.redis.base;
+package com.mingrn.common.redis.client.base;
 
 import com.mingrn.common.redis.config.JedisConfig;
 import redis.clients.jedis.Jedis;

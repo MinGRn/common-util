@@ -1,6 +1,6 @@
 package com.mingrn.common.redis.client;
 
-import com.mingrn.common.redis.base.BaseJedisClient;
+import com.mingrn.common.redis.client.base.BaseJedisClient;
 import com.mingrn.common.redis.config.JedisConfig;
 import redis.clients.jedis.GeoCoordinate;
 import redis.clients.jedis.GeoRadiusResponse;
