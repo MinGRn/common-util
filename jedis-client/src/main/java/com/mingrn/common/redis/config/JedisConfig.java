@@ -45,11 +45,11 @@ public class JedisConfig {
 	}
 
 	/**
-	 * 归还 Redis 连接
+	 * 释放 Redis 连接
 	 *
 	 * @param jedis 实例
 	 */
-	public static void returnJedisObject(Jedis jedis) {
+	public static void releaseJedisObject(Jedis jedis) {
 		if (jedis != null) {
 			jedis.close();
 		}

@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 import java.net.URLEncoder;
 
 /**
- * 明文位置获取经纬度点信息{@see #twoLocationDistance}
+ * 明文位置获取经纬度点信息{@link #twoLocationDistance}
  * </p>
  * 发送 GET 请求借助 httpclient,需要在 POM 中引入:
  * <a href="http://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient"></a>

@@ -20,7 +20,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -33,7 +33,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -46,7 +46,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -59,7 +59,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -72,7 +72,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -85,7 +85,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -98,7 +98,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -111,7 +111,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -124,7 +124,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -137,7 +137,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -150,7 +150,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -163,7 +163,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -176,7 +176,7 @@ public abstract class BaseJedisClient implements BaseJedisRepository {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 }

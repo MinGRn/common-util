@@ -28,7 +28,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -41,7 +41,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -50,11 +50,16 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		Jedis jedis = null;
 		try {
 			jedis = JedisConfig.getResource();
-			return jedis.geopos(key, member).get(0);
+			List<GeoCoordinate> geopos =  jedis.geopos(key, member);
+			if (geopos.size() > 0){
+				return geopos.get(0);
+			} else {
+				return null;
+			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -67,7 +72,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -80,7 +85,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -93,7 +98,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -106,7 +111,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -119,7 +124,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -132,7 +137,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 
@@ -145,7 +150,7 @@ public class JedisGeoClient extends BaseJedisClient implements JedisGeoRepositor
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally {
-			JedisConfig.returnJedisObject(jedis);
+			JedisConfig.releaseJedisObject(jedis);
 		}
 	}
 }
