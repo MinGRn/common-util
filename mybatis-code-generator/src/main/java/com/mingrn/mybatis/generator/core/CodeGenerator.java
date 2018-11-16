@@ -2,10 +2,6 @@ package com.mingrn.mybatis.generator.core;
 
 import com.google.common.base.CaseFormat;
 import freemarker.template.TemplateExceptionHandler;
-import org.apache.commons.lang3.StringUtils;
-import org.mybatis.generator.api.MyBatisGenerator;
-import org.mybatis.generator.config.*;
-import org.mybatis.generator.internal.DefaultShellCallback;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -15,6 +11,20 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.apache.commons.lang3.StringUtils;
+import org.mybatis.generator.api.MyBatisGenerator;
+import org.mybatis.generator.config.Configuration;
+import org.mybatis.generator.config.Context;
+import org.mybatis.generator.config.GeneratedKey;
+import org.mybatis.generator.config.JDBCConnectionConfiguration;
+import org.mybatis.generator.config.JavaClientGeneratorConfiguration;
+import org.mybatis.generator.config.JavaModelGeneratorConfiguration;
+import org.mybatis.generator.config.ModelType;
+import org.mybatis.generator.config.PluginConfiguration;
+import org.mybatis.generator.config.SqlMapGeneratorConfiguration;
+import org.mybatis.generator.config.TableConfiguration;
+import org.mybatis.generator.internal.DefaultShellCallback;
 
 /**
  * DAO、Model、DTO、Mapper 文件生成类
@@ -39,7 +49,7 @@ public class CodeGenerator {
 	private static String dto;
 	private static String service;
 	private static String serviceImpl;
-	private static final String DATE = (new SimpleDateFormat("yyyy/MM/dd")).format(new Date());
+	private static final String DATE = (new SimpleDateFormat("dd/MM/yyyy HH:mm")).format(new Date());
 
 	/**
 	 * 获取 DTO、Service、Impl 文件包路径

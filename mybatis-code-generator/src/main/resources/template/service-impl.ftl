@@ -4,7 +4,7 @@ import ${basePackage}.mapper.${domainNameUpperCamel}Mapper;
 import ${basePackage}.domain.${domainNameUpperCamel};
 import ${basePackage}.service.${domainNameUpperCamel}Service;
 import ${basePackage}.dto.${domainNameUpperCamel}DTO;
-import com.uhope.core.AbstractService;
+import com.mingrn.keeper.core.AbstractService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.lang.${pkDataType};
@@ -13,7 +13,8 @@ import javax.annotation.Resource;
 
 /**
  * ${description}-ServiceImpl接口实现类
- * @author ${author} on ${date}
+ * @author ${author}
+ * @date ${date}
  */
 @Service
 @Transactional
