@@ -11,7 +11,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<org.dom4j.dom4j.version>1.6.1</org.dom4j.dom4j.version>
-		<xstream.version>1.4.10</xstream.version>
+		<xstream.version>1.4.11.1</xstream.version>
 		<slf4j.version>1.7.7</slf4j.version>
 		<logback.version>1.1.7</logback.version>
 		<spring.web.version>5.0.8.RELEASE</spring.web.version>
