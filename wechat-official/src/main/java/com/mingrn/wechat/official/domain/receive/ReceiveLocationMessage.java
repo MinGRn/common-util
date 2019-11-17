@@ -1,32 +1,33 @@
-package com.mingrn.wechat.official.domain.send;
+/*
+ * MinGRn97@gmaio.com
+ * Copyright (c) 2019 - 2019 by MinGRn. All Rights Reserved.
+ */
+
+package com.mingrn.wechat.official.domain.receive;
+
+import com.mingrn.wechat.official.domain.BaseMessage;
 
 /**
  * 发送地理位置消息
  *
  * @author MinGRn <br > 21/09/2018 17:09
- * @email MinGRn97@gmail.com
  */
-public class LocationMessage extends BaseMessage {
+public class ReceiveLocationMessage extends BaseMessage {
 
-	/**
-	 * 地理位置维度
-	 */
+	/** 地理位置维度 */
 	private float Location_X;
 
-	/**
-	 * 地理位置经度
-	 */
+	/** 地理位置经度 */
 	private float Location_Y;
 
-	/**
-	 * 地图缩放大小
-	 */
+	/** 地图缩放大小 */
 	private int Scale;
 
-	/**
-	 * Label
-	 */
+	/** 地理位置信息 */
 	private String Label;
+
+	/** 消息id,64位整型 */
+	private Long MsgId;
 
 	public float getLocation_X() {
 		return Location_X;
@@ -58,5 +59,13 @@ public class LocationMessage extends BaseMessage {
 
 	public void setLabel(String label) {
 		Label = label;
+	}
+
+	public Long getMsgId() {
+		return MsgId;
+	}
+
+	public void setMsgId(Long msgId) {
+		MsgId = msgId;
 	}
 }

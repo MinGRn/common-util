@@ -105,7 +105,7 @@ public class JedisLock {
 	}
 
 	/**
-	 * 获取锁, No Waiting !
+	 * 获取锁, No Waiting!
 	 *
 	 * @param lockKey 锁Key
 	 * @return value of key
