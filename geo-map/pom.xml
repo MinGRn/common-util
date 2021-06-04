@@ -13,7 +13,7 @@
         <java.version>1.7</java.version>
         <mysql.version>6.0.6</mysql.version>
         <fastjson.version>1.2.47</fastjson.version>
-        <httpclient.version>4.5.6</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <log.slf4j.version>1.7.7</log.slf4j.version>
         <log.logback.version>1.1.7</log.logback.version>
     </properties>
