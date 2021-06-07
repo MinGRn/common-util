@@ -15,7 +15,7 @@
         <fastjson.version>1.2.47</fastjson.version>
         <httpclient.version>4.5.6</httpclient.version>
         <log.slf4j.version>1.7.7</log.slf4j.version>
-        <log.logback.version>1.1.7</log.logback.version>
+        <log.logback.version>1.2.0</log.logback.version>
     </properties>
 
     <dependencies>
